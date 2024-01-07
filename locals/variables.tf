@@ -1,6 +1,11 @@
-variable "isProd" {
-  type = bool
-  default = true
+# variable "isProd" {
+#   type = bool
+#   default = true
+# }
+
+variable "instance_names" {
+  type = list
+  default = ["mongodb","redis","mysql","rabbitmq","catalogue","user","cart","shipping","payment","dispatch","web"]
 }
 
 variable "ami_id" {
